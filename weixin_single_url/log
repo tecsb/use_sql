@@ -1,0 +1,10 @@
+#2017-6-6 新增了可以保存带有图片的网页，方式是通过chromedriver加scrollby访问单个文章
+#2017-6-29 webdriverwait出现超时异常，更换参数解决。
+#2017-6-29 多线程访问。
+#2017-6-29 解决日期带有“原创”标题的文章无法保存到本地。
+#2017-12-1 修改mongodb中的date字段属性，由string改为datetime
+#2018-7-26 mkdir改为makedirs
+#2018-9-30 由于chrome升级，导致执行js window-scroll-by 出错，去掉了mobileemulaiton，添加了UserAgent
+#2018-9-30 添加了debug=True，如果是False则会过滤重复请求
+#2018-10-08 图片不显示的问题由于crossorigin 以及 data-src和src不一致造成的；加了一个download方法没什么用
+#2018-10-09 更改apple iPhone 6 为 iPhone 6;不断更新获取document.body.scrollHeight;
